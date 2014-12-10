@@ -6,6 +6,6 @@
   :description "Matrix of cljsbuild/ClojureScript compatibility"
   :url "http://github.com/emezeske/lein-cljsbuild"
   :license
-  {:name "Eclipse Public License - v 1.0"
+  {:name "Eclipse Publics License - v 1.0"
    :url "http://www.eclipse.org/legal/epl-v10.html"
    :distribution :repo})

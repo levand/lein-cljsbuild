@@ -127,8 +127,8 @@
         clj-files-in-cljs-paths
           (into {}
             (for [cljs-path cljs-paths]
-              [cljs-path (util/find-files cljs-path #{"clj"})]))
-        cljs-files (mapcat #(util/find-files % #{"cljs"}) (conj cljs-paths crossover-path))
+              [cljs-path (util/find-files cljs-path #{"clj" "cljc"})]))
+        cljs-files (mapcat #(util/find-files % #{"cljs" "cljc"}) (conj cljs-paths crossover-path))
         js-files (->> lib-paths
                       (mapcat #(util/find-files % #{"js"}))
                       ; Don't include js files in output-dir or our output file itself,
